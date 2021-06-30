@@ -9,6 +9,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </head>
+<title>Front</title>
 <style>
 .tab .nav-tabs{
     border-bottom:0 none;
@@ -285,15 +286,15 @@ Charging was carried out in a constant current (CC) mode at 1.5A until the batte
                     <hr />
                     <form action="{{url_for('result')}}" method='POST'>
                             <div class="form-group">
-                              <label for="Discharge_min_Threshold_voltage_time">Time Taken to reach Minimum Threshold - Discharge</label>
+                              <label for="Discharge_min_Threshold_voltage_time">Time Taken to reach Minimum Threshold - Discharge(in secondss)</label>
                             <div></div>
-                              <input type="number" class="form-control" step="any" id="Discharge_min_Threshold_voltage_time" name="Discharge" placeholder="Discharge_min_Threshold_voltage_time : 4000-10000" min="4000" max='10000'  required="required"
+                              <input type="number" class="form-control" step="any" id="Discharge_min_Threshold_voltage_time" name="Discharge" placeholder="Discharge_min_Threshold_voltage_time  "  required="required"
                               style="color:black; background-color:lightgrey" >
                             </div>
             
                             <div class="form-group" >
-                              <label for="Charging_max_Threshold_voltage_time">Time Taken to reach Maximum Threshold - Charge</label>
-                              <input type="number" class="form-control" step="any" id="Charging_max_Threshold_voltage_time" name="Charge" placeholder="Charging_max_Threshold_voltage_time : 200-3000 " min="200" max="3000" required="required"
+                              <label for="Charging_max_Threshold_voltage_time">Time Taken to reach Maximum Threshold - Charge(in seconds)</label>
+                              <input type="number" class="form-control" step="any" id="Charging_max_Threshold_voltage_time" name="Charge" placeholder="Charging_max_Threshold_voltage_time  "  required="required"
                               style="color:black; background-color:lightgrey;" >
                             </div>
 
@@ -303,6 +304,7 @@ Charging was carried out in a constant current (CC) mode at 1.5A until the batte
                              <p style="text-align:center;color: lightseagreen;">   Remaining Useful Life of battery - <b>89%</b> Accuracy
                            
                             </p>
+			    <img src="static/graph1.gif" alt="" style="width: 30%; float:left; justify-self: center; margin-left: 7cm;">
                             
                         <button type="submit" class="btn btn-primary btn-block" style="outline:none;border:none">Predict</button>
 					</form>
@@ -354,13 +356,20 @@ Charging was carried out in a constant current (CC) mode at 1.5A until the batte
                         </p>
                         <div class="center" style="text-align:center ;">
                             
-                        <a href="https://www.google.com"> <i style="font-size:36px;color:black" class="fa">&#xf09b;</i></a>
+                        <a href="https://github.com/HariHaran37/nasa_battery"> <i style="font-size:36px;color:black; margin-top:1cm;" class="fa">&#xf09b;</i></a>
                         </div>
+
+                        
                     </div>
+		<footer style="text-align: center; margin-top: 1cm;">&copy; Copyright 2021</footer>
+		    
                 </div>
             </div>
+	    
         </div>
+	
     </div>
+	
 </div>
 </body>
 </html>
